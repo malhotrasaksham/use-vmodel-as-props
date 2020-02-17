@@ -1,6 +1,6 @@
 <template>
   <div class="hello">
-    <span v-text="value"></span>
+    <input type="text" :value="value" @input="$emit('input', $event.target.value)">
   </div>
 </template>
 
